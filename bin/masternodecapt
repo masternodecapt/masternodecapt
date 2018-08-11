@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 
 'use strict';
-
+const argv = require('optimist')
+              .boolean('cors')
+              .argv;
 const masterNodeCapt = require('../lib/masternodecapt');
 
 if (argv.h || argv.help) {
