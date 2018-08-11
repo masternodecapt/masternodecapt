@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+
+'use strict';
+
+const masterNodeCapt = require('../lib/masternodecapt');
+
+if (argv.h || argv.help) {
+  console.log([
+    'usage: masternodecapt install|list|help'
+  ].join('\n'));
+  process.exit();
+}
+
+if ( argv.install || argv['install-service'] ){
+  masterNodeCapt.install();
+} else if ( argv.list ) {
+  masterNodeCapt.list();
+} else {
+  console.log("Unknown command");
+  console.log([
+    'usage: masternodecapt install|list|help'
+  ].join('\n'));
+}
+
+
