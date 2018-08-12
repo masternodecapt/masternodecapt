@@ -1,6 +1,6 @@
 {
   "name": "masternodecapt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "./lib/masternodecapt",
   "directories": {
@@ -8,11 +8,13 @@
   },
   "dependencies": {
     "child-process-promise": "^2.2.1",
+    "node-cron": "^1.2.1",
     "optimist": "^0.6.1"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-cron": "node masternodecapt service"
   },
   "bin": {
     "masternodecapt": "./bin/masternodecapt"

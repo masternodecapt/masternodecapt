@@ -8,7 +8,7 @@ const masterNodeCapt = require('../lib/masternodecapt');
 
 if (argv.h || argv.help) {
   console.log([
-    'usage: masternodecapt install|list|help'
+    'usage: masternodecapt install|list|help|service'
   ].join('\n'));
   process.exit();
 }
@@ -17,6 +17,10 @@ if ( argv.install || argv['install-service'] ){
   masterNodeCapt.install();
 } else if ( argv.list ) {
   masterNodeCapt.list();
+
+} else if ( argv.service ) {
+  masterNodeCapt.service();
+
 } else {
   console.log("Unknown command");
   console.log([
