@@ -1,6 +1,6 @@
 {
   "name": "masternodecapt",
-  "version": "1.0.3",
+  "version": "1.0.4-pre",
   "description": "",
   "main": "./lib/masternodecapt",
   "directories": {
