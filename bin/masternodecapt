@@ -21,6 +21,10 @@ if (argv.h || argv.help) {
 
 if ( argv.install || argv['install-service'] ){
   masterNodeCapt.install();
+
+} else if ( argv.install || argv['install-service'] ){
+  masterNodeCapt.reinstall();
+
 } else if ( argv.list ) {
   masterNodeCapt.list();
 
