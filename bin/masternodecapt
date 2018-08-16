@@ -28,6 +28,9 @@ if ( argv.install || argv['install-service'] ){
 } else if ( argv.list ) {
   masterNodeCapt.list();
 
+} else if ( argv.announce ) {
+  masterNodeCapt.announce();
+
 } else if ( argv.service ) {
   masterNodeCapt.service();
 
