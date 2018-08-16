@@ -10,7 +10,7 @@ const ver = (pjson||{}).version;
 
 console.log( "Masternode Captain. Version: ", ver);
 
-const strUsage = 'usage: masternodecapt install|list|help|service';
+const strUsage = 'usage: masternodecapt install|reinstall|list|help|service';
 
 if (argv.h || argv.help) {
   console.log([
@@ -22,7 +22,7 @@ if (argv.h || argv.help) {
 if ( argv.install || argv['install-service'] ){
   masterNodeCapt.install();
 
-} else if ( argv.install || argv['install-service'] ){
+} else if ( argv.reinstall || argv['reinstall-service'] ){
   masterNodeCapt.reinstall();
 
 } else if ( argv.list ) {
